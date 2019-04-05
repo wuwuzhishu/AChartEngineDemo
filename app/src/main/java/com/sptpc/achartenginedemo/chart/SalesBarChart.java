@@ -39,7 +39,7 @@ public class SalesBarChart extends AbstractDemoChart {
    * @return the chart name
    */
   public String getName() {
-    return "Sales horizontal bar chart";
+    return "Sales horizontal bar chart（销售水平条形图）";
   }
 
   /**
@@ -48,7 +48,7 @@ public class SalesBarChart extends AbstractDemoChart {
    * @return the chart description
    */
   public String getDesc() {
-    return "The monthly sales for the last 2 years (horizontal bar chart)";
+    return "The monthly sales for the last 2 years (horizontal bar chart)近两年的月销售额(水平柱状图）";
   }
 
   /**

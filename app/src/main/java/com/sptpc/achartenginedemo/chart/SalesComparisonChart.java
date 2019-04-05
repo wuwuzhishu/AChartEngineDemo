@@ -39,7 +39,7 @@ public class SalesComparisonChart extends AbstractDemoChart {
    * @return the chart name
    */
   public String getName() {
-    return "Sales comparison";
+    return "Sales comparison销售比较-混合图";
   }
 
   /**
@@ -48,7 +48,7 @@ public class SalesComparisonChart extends AbstractDemoChart {
    * @return the chart description
    */
   public String getDesc() {
-    return "Monthly sales advance for 2 years (interpolated line and area charts)";
+    return "Monthly sales advance for 2 years (interpolated line and area charts)连续2年每月销售增长（曲线图和面积图）";
   }
 
   /**

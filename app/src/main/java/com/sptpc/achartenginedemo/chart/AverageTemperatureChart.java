@@ -40,7 +40,7 @@ public class AverageTemperatureChart extends AbstractDemoChart {
    * @return the chart name
    */
   public String getName() {
-    return "Average temperature";
+    return "Average temperature（平均温度图-折线图）";
   }
 
   /**
@@ -49,7 +49,7 @@ public class AverageTemperatureChart extends AbstractDemoChart {
    * @return the chart description
    */
   public String getDesc() {
-    return "The average temperature in 4 Greek islands (line chart)";
+    return "The average temperature in 4 Greek islands (line chart)4个greek岛屿的平均气温(折线图)";
   }
 
   /**
@@ -92,6 +92,7 @@ public class AverageTemperatureChart extends AbstractDemoChart {
     XYMultipleSeriesDataset dataset = buildDataset(titles, x, values);
     XYSeries series = dataset.getSeriesAt(0);
     series.addAnnotation("Vacation", 6, 30);
+    //getLineChartIntent方法画折线图
     Intent intent = ChartFactory.getLineChartIntent(context, dataset, renderer,
         "Average temperature");
     return intent;

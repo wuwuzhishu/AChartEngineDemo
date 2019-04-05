@@ -38,7 +38,7 @@ public class ScatterChart extends AbstractDemoChart {
    * @return the chart name
    */
   public String getName() {
-    return "Scatter chart";
+    return "Scatter chart（散点图）";
   }
 
   /**
@@ -47,7 +47,7 @@ public class ScatterChart extends AbstractDemoChart {
    * @return the chart description
    */
   public String getDesc() {
-    return "Randomly generated values for the scatter chart";
+    return "Randomly generated values for the scatter chart随机产生值的散点图";
   }
 
   /**
@@ -85,6 +85,7 @@ public class ScatterChart extends AbstractDemoChart {
     for (int i = 0; i < length; i++) {
       ((XYSeriesRenderer) renderer.getSeriesRendererAt(i)).setFillPoints(true);
     }
+    //getScatterChartIntent方法画散点图
     return ChartFactory.getScatterChartIntent(context, buildDataset(titles, x, values), renderer);
   }
 

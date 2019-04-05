@@ -38,7 +38,7 @@ public class AverageCubicTemperatureChart extends AbstractDemoChart {
    * @return the chart name
    */
   public String getName() {
-    return "Average temperature";
+    return "Average temperature（平均温度图-立方折线图）";
   }
 
   /**
@@ -47,7 +47,7 @@ public class AverageCubicTemperatureChart extends AbstractDemoChart {
    * @return the chart description
    */
   public String getDesc() {
-    return "The average temperature in 4 Greek islands (cubic line chart)";
+    return "The average temperature in 4 Greek islands (cubic line chart)4个greek岛屿的平均气温(立方折线图)";
   }
 
   /**
@@ -86,6 +86,7 @@ public class AverageCubicTemperatureChart extends AbstractDemoChart {
     renderer.setZoomButtonsVisible(true);
     renderer.setPanLimits(new double[] { -10, 20, -10, 40 });
     renderer.setZoomLimits(new double[] { -10, 20, -10, 40 });
+    //getLineChartIntent方法画立体折线图
     Intent intent = ChartFactory.getCubicLineChartIntent(context, buildDataset(titles, x, values),
         renderer, 0.33f, "Average temperature");
     return intent;

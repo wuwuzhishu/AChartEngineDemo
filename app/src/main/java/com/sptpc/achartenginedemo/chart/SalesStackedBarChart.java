@@ -37,7 +37,7 @@ public class SalesStackedBarChart extends AbstractDemoChart {
    * @return the chart name
    */
   public String getName() {
-    return "Sales stacked bar chart";
+    return "Sales stacked bar chart（销售堆叠柱状图）";
   }
 
   /**
@@ -46,7 +46,7 @@ public class SalesStackedBarChart extends AbstractDemoChart {
    * @return the chart description
    */
   public String getDesc() {
-    return "The monthly sales for the last 2 years (stacked bar chart)";
+    return "The monthly sales for the last 2 years (stacked bar chart)过去2年的月销售额(堆叠柱状图)";
   }
 
   /**
@@ -76,6 +76,7 @@ public class SalesStackedBarChart extends AbstractDemoChart {
     // renderer.setZoomEnabled(false);
     renderer.setZoomRate(1.1f);
     renderer.setBarSpacing(0.5f);
+    //getBarChartIntent方法画柱状图
     return ChartFactory.getBarChartIntent(context, buildBarDataset(titles, values), renderer,
         Type.STACKED);
   }

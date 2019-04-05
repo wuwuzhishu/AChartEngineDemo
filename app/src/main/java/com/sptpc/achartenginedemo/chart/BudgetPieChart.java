@@ -33,7 +33,7 @@ public class BudgetPieChart extends AbstractDemoChart {
    * @return the chart name
    */
   public String getName() {
-    return "Budget chart";
+    return "Budget chart（预算图表）";
   }
 
   /**
@@ -42,7 +42,7 @@ public class BudgetPieChart extends AbstractDemoChart {
    * @return the chart description
    */
   public String getDesc() {
-    return "The budget per project for this year (pie chart)";
+    return "The budget per project for this year (pie chart)今年每个项目的预算(饼图)";
   }
 
   /**
@@ -65,6 +65,7 @@ public class BudgetPieChart extends AbstractDemoChart {
     r.setGradientStart(0, Color.BLUE);
     r.setGradientStop(0, Color.GREEN);
     r.setHighlighted(true);
+    //getPieChartIntent方法画饼图
     Intent intent = ChartFactory.getPieChartIntent(context,
         buildCategoryDataset("Project budget", values), renderer, "Budget");
     return intent;

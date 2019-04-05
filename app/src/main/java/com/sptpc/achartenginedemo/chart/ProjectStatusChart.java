@@ -38,7 +38,7 @@ public class ProjectStatusChart extends AbstractDemoChart {
    * @return the chart name
    */
   public String getName() {
-    return "Project tickets status";
+    return "Project tickets status（项目门票状态-曲线图）";
   }
 
   /**
@@ -47,7 +47,7 @@ public class ProjectStatusChart extends AbstractDemoChart {
    * @return the chart description
    */
   public String getDesc() {
-    return "The opened tickets and the fixed tickets (time chart)";
+    return "The opened tickets and the fixed tickets (time chart)开票与定票(时间表)";
   }
 
   /**
@@ -93,6 +93,7 @@ public class ProjectStatusChart extends AbstractDemoChart {
       seriesRenderer.setDisplayChartValues(true);
     }
     renderer.setXRoundedLabels(false);
+    //getTimeChartIntent方法
     return ChartFactory.getTimeChartIntent(context, buildDateDataset(titles, dates, values),
         renderer, "MM/dd/yyyy");
   }

@@ -45,7 +45,7 @@ public class CombinedTemperatureChart extends AbstractDemoChart {
    * @return the chart name
    */
   public String getName() {
-    return "Combined temperature";
+    return "Combined temperature（组合温度）";
   }
 
   /**
@@ -54,7 +54,8 @@ public class CombinedTemperatureChart extends AbstractDemoChart {
    * @return the chart description
    */
   public String getDesc() {
-    return "The average temperature in 2 Greek islands, water temperature and sun shine hours (combined chart)";
+    return "The average temperature in 2 Greek islands, water temperature and sun shine hours (combined chart)" +
+            "greek2个岛屿的平均气温、水温及日照时数(组合图表)";
   }
 
   /**

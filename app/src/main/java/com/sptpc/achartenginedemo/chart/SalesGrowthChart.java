@@ -39,7 +39,7 @@ public class SalesGrowthChart extends AbstractDemoChart {
    * @return the chart name
    */
   public String getName() {
-    return "Sales growth";
+    return "Sales growth(销售增长)";
   }
 
   /**
@@ -48,7 +48,7 @@ public class SalesGrowthChart extends AbstractDemoChart {
    * @return the chart description
    */
   public String getDesc() {
-    return "The sales growth across several years (time chart)";
+    return "The sales growth across several years (time chart)几年的销售增长(时间图表)";
   }
 
   /**

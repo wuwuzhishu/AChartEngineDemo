@@ -46,7 +46,7 @@ public class SensorValuesChart extends AbstractDemoChart {
    * @return the chart name
    */
   public String getName() {
-    return "Sensor data";
+    return "Sensor data感官数据";
   }
 
   /**
@@ -55,7 +55,7 @@ public class SensorValuesChart extends AbstractDemoChart {
    * @return the chart description
    */
   public String getDesc() {
-    return "The temperature, as read from an outside and an inside sensors";
+    return "The temperature, as read from an outside and an inside sensors从外部和内部传感器读出的温度";
   }
 
   /**

@@ -35,7 +35,7 @@ public class ProjectStatusBubbleChart extends AbstractDemoChart {
    * @return the chart name
    */
   public String getName() {
-    return "Project tickets status";
+    return "Project tickets status（项目门票状态）";
   }
 
   /**
@@ -44,7 +44,7 @@ public class ProjectStatusBubbleChart extends AbstractDemoChart {
    * @return the chart description
    */
   public String getDesc() {
-    return "The opened tickets and the fixed tickets (bubble chart)";
+    return "The opened tickets and the fixed tickets (bubble chart)开票与定票(气泡图)";
   }
 
   /**

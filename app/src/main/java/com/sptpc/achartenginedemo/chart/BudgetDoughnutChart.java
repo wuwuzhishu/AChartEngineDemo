@@ -35,7 +35,7 @@ public class BudgetDoughnutChart extends AbstractDemoChart {
    * @return the chart name
    */
   public String getName() {
-    return "Budget chart for several years";
+    return "Budget chart for several years几年的预算表";
   }
 
   /**
@@ -44,7 +44,7 @@ public class BudgetDoughnutChart extends AbstractDemoChart {
    * @return the chart description
    */
   public String getDesc() {
-    return "The budget per project for several years (doughnut chart)";
+    return "The budget per project for several years (doughnut chart)几年来每个项目的预算(圆环图或甜甜圈图)";
   }
 
   /**
@@ -66,6 +66,7 @@ public class BudgetDoughnutChart extends AbstractDemoChart {
     renderer.setApplyBackgroundColor(true);
     renderer.setBackgroundColor(Color.rgb(222, 222, 200));
     renderer.setLabelsColor(Color.GRAY);
+    //getDoughnutChartIntent方法画甜甜圈图（圆环图）
     return ChartFactory.getDoughnutChartIntent(context,
         buildMultipleCategoryDataset("Project budget", titles, values), renderer,
         "Doughnut chart demo");

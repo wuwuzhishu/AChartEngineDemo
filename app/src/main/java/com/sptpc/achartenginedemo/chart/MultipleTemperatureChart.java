@@ -39,7 +39,7 @@ public class MultipleTemperatureChart extends AbstractDemoChart {
    * @return the chart name
    */
   public String getName() {
-    return "Temperature and sunshine";
+    return "Temperature and sunshine（温度和阳光）";
   }
 
   /**
@@ -48,7 +48,8 @@ public class MultipleTemperatureChart extends AbstractDemoChart {
    * @return the chart description
    */
   public String getDesc() {
-    return "The average temperature and hours of sunshine in Crete (line chart with multiple Y scales and axis)";
+    return "The average temperature and hours of sunshine in Crete (line chart with multiple Y scales and axis)" +
+            "Crete平均气温、日照时数(多Y、多轴折线图)";
   }
 
   /**

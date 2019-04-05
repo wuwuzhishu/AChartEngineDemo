@@ -38,7 +38,7 @@ public class TemperatureChart extends AbstractDemoChart {
    * @return the chart name
    */
   public String getName() {
-    return "Temperature range chart";
+    return "Temperature range chart（温度范围图）";
   }
 
   /**
@@ -47,7 +47,7 @@ public class TemperatureChart extends AbstractDemoChart {
    * @return the chart description
    */
   public String getDesc() {
-    return "The monthly temperature (vertical range chart)";
+    return "The monthly temperature (vertical range chart)每月气温(垂直距离柱状图)";
   }
 
   /**
@@ -93,6 +93,7 @@ public class TemperatureChart extends AbstractDemoChart {
     r.setGradientEnabled(true);
     r.setGradientStart(-20, Color.BLUE);
     r.setGradientStop(20, Color.GREEN);
+    //getRangeBarChartIntent方法画垂直距离柱状图
     return ChartFactory.getRangeBarChartIntent(context, dataset, renderer, Type.DEFAULT,
         "Temperature range");
   }

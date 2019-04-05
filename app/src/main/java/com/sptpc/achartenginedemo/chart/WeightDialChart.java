@@ -34,7 +34,7 @@ public class WeightDialChart extends AbstractDemoChart {
    * @return the chart name
    */
   public String getName() {
-    return "Weight chart";
+    return "Weight chart体重表";
   }
   
   /**
@@ -42,7 +42,7 @@ public class WeightDialChart extends AbstractDemoChart {
    * @return the chart description
    */
   public String getDesc() {
-    return "The weight indicator (dial chart)";
+    return "The weight indicator (dial chart)重量指示器(刻度盘)";
   }
   
   /**

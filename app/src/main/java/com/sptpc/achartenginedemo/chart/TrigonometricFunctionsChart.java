@@ -35,7 +35,7 @@ public class TrigonometricFunctionsChart extends AbstractDemoChart {
    * @return the chart name
    */
   public String getName() {
-    return "Trigonometric functions";
+    return "Trigonometric functions（三角函数-折线图）";
   }
   
   /**
@@ -43,7 +43,7 @@ public class TrigonometricFunctionsChart extends AbstractDemoChart {
    * @return the chart description
    */
   public String getDesc() {
-    return "The graphical representations of the sin and cos functions (line chart)";
+    return "The graphical representations of the sin and cos functions (line chart)sin和cos函数的图形表示(折线图)";
   }
   
   /**

@@ -57,7 +57,7 @@ public class GeneratedChartDemo extends ListActivity {
     super.onCreate(savedInstanceState);
     // I know, I know, this should go into strings.xml and accessed using
     // getString(R.string....)
-    mMenuText = new String[] { "Line chart", "Scatter chart", "Time chart", "Bar chart" };
+    mMenuText = new String[] { "Line chart-线形图", "Scatter chart-散点图", "Time chart时间图", "Bar chart柱状图" };
     mMenuSummary = new String[] { "Line chart with randomly generated values",
         "Scatter chart with randomly generated values",
         "Time chart with randomly generated values", "Bar chart with randomly generated values" };
