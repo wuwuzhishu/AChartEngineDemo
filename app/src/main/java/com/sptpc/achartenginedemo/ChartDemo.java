@@ -53,16 +53,18 @@ public class ChartDemo extends ListActivity {
         int length = mCharts.length;
         mMenuText = new String[length + 3];
         mMenuSummary = new String[length + 3];
-        mMenuText[0] = "Embedded line chart demo(嵌入式线形图演示)";
-        mMenuSummary[0] = "A demo on how to include a clickable line chart into a graphical activity(演示如何将可单击的折线图包含到图形化活动中)";
-        mMenuText[1] = "Embedded pie chart demo(嵌入式饼图演示)";
-        mMenuSummary[1] = "A demo on how to include a clickable pie chart into a graphical activity(演示如何将可单击的饼图包含到图形活动中)";
+        mMenuText[0] = "Random values charts(随机值的图表)";
+        mMenuSummary[0] = "Chart demos using randomly generated values(使用随机生成值的图表演示)";
+        mMenuText[1] = "Embedded line chart demo(嵌入式线形图演示)";
+        mMenuSummary[1] = "A demo on how to include a clickable line chart into a graphical activity(演示如何将可单击的折线图包含到图形化活动中)";
+        mMenuText[2] = "Embedded pie chart demo(嵌入式饼图演示)";
+        mMenuSummary[2] = "A demo on how to include a clickable pie chart into a graphical activity(演示如何将可单击的饼图包含到图形活动中)";
+
         for (int i = 0; i < length; i++) {
-            mMenuText[i + 2] = mCharts[i].getName();
-            mMenuSummary[i + 2] = mCharts[i].getDesc();
+            mMenuText[i + 3] = mCharts[i].getName();
+            mMenuSummary[i + 3] = mCharts[i].getDesc();
         }
-        mMenuText[length + 2] = "Random values charts(随机值的图表)";
-        mMenuSummary[length + 2] = "Chart demos using randomly generated values(使用随机生成值的图表演示)";
+
         setListAdapter(new SimpleAdapter(this, getListValues(), android.R.layout.simple_list_item_2,
                 new String[] { IDemoChart.NAME, IDemoChart.DESC }, new int[] { android.R.id.text1,
                 android.R.id.text2 }));
@@ -84,14 +86,14 @@ public class ChartDemo extends ListActivity {
     protected void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
         Intent intent = null;
-        if (position == 0) {
-            intent = new Intent(this, XYChartBuilder.class);
-        } else if (position == 1) {
-            intent = new Intent(this, PieChartBuilder.class);
-        } else if (position <= mCharts.length + 1) {
-            intent = mCharts[position - 2].execute(this);
-        } else {
+        if (position == 0){
             intent = new Intent(this, GeneratedChartDemo.class);
+        }else if (position == 1) {
+            intent = new Intent(this, XYChartBuilder.class);
+        } else if (position == 2) {
+            intent = new Intent(this, PieChartBuilder.class);
+        } else  {
+            intent = mCharts[position - 3].execute(this);
         }
         startActivity(intent);
     }
